@@ -1,0 +1,36 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+:root {
+  --main-color: #ff702a;
+  --text-color: #fff;
+  --bg-color: #1e1c2a;
+  --accent-color: #2b1f3d;
+  --white-accent: #feeee7;
+  --main-color2: #E3E6F3;
+  --main-orange: hsl(29, 100%, 59%);
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: var(--bg-color);
+    padding-top: 70px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #140e1d;
+  border-radius: 10px;
+}

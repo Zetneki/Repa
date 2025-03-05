@@ -1,0 +1,269 @@
+
+:root {
+  --main-color: #ff702a;
+  --text-color: #fff;
+  --bg-color: #1e1c2a;
+  --accent-color: #2b1f3d;
+  --white-accent: #feeee7;
+  --main-color2: #E3E6F3;
+  --main-orange: hsl(29, 100%, 59%);
+}
+
+body {
+  padding-top:0px;
+}
+/*
+* BANNER
+*/
+
+.banner {
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/banner2.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 100px 0px 90px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-box {
+  background-color: rgba(254, 238, 231, .5);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  width: 100%;
+  padding: 60px;
+}
+.banner-box h1 {
+  color: var(--bg-color);
+  margin-bottom: 10px;
+}
+
+.banner-box h3 {
+  color: var(--accent-color);
+}
+
+/**
+* PRODUCT CARDS
+*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.product-box {
+  background-color: rgba(254, 238, 231, .8);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 15px;
+}
+
+
+.product-box img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.input {
+  max-width: 300px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.product-box input[type="number"] {
+  width: 100px;
+  height: 50px;
+  border-radius: 15px 0px 0px 15px;
+  outline: none;
+  border: 1px solid black;
+  padding-left: 15px;
+  font-size: 1rem;
+}
+
+.product-box input[type="submit"] {
+  width: 100px;
+  height: 50px;
+  border-radius: 0px 15px 15px 0px;
+  outline: none;
+  border: 1px solid black;
+  translate: -1px 0px;
+  font-size: 12pt;
+  transition: all .1s ease-out;
+}
+
+.product-box input[type="submit"]:hover {
+  background-color: var(--main-color);
+  color: var(--white-accent);
+  cursor: pointer;
+}
+
+.product-box h4 {
+  margin: 20px 0px 0px 0px;
+  font-size: 16pt;
+}
+.product-box h5 {
+  font-size: 11pt;
+  margin: 15px 0px;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+/**
+* ALERT
+**/
+
+.alert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  max-width: 50%;
+  position: fixed;
+  top: 20%;
+  right: 20%;
+  left: 20%;
+  bottom: 20%;
+  margin: auto;
+}
+
+.alertBody {
+  flex: 4;
+  background-color: var(--accent-color);
+  color: var(--white-accent);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 998;
+  text-align: center;
+}
+
+.alertHead {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+
+.alertHead input {
+  fill: var(--white-accent);
+  position: absolute;
+  right: 5%;
+  top: 7%;
+  background-color: transparent;
+  padding: 5px 10px;
+  border: 0;
+  color: var(--white-accent);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.alertHead input:hover {
+  cursor: pointer;
+}
+
+.alertHead h3 {
+  color: var(--white-accent);
+  display: inline-block;
+  padding: 0px 50px 0px 30px;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 999;
+
+}
+
+.errorOverlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 999;
+  display: none;
+}
+
+/**
+* QUIZ
+**/
+
+#border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10%;
+  background-color: var(--accent-color);
+  padding: 5% 0px;
+}
+
+
+#border p {
+  font-size: 1.5rem;
+  color: var(--white-accent);
+}
+
+#answer {
+  border: none;
+  background-color: antiquewhite;
+  box-shadow: 0px 0px 15px rgb(143, 123, 98);
+  font-size: 1rem;
+  outline: none;
+  width: 50%;
+  padding: 10px 5px;
+  margin: 2% 0px;
+}
+
+#submit {
+  display: inline-block;
+  border: none;
+  background-color: brown;
+  color: var(--white-accent);
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#submit:hover {
+  background-color: rgb(105, 26, 26);
+}
+
+#submit:active {
+  background-color: rgb(59, 14, 14);
+}
+
+@media(max-width: 500px) {
+  .alert h2 {
+    font-size: 1rem;
+  }
+}

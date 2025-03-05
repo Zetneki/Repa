@@ -1,0 +1,143 @@
+:root {
+  --main-color: #ff702a;
+  --text-color: #fff;
+  --bg-color: #1e1c2a;
+  --accent-color: #2b1f3d;
+  --white-accent: #feeee7;
+  --main-color2: #E3E6F3;
+  --main-orange: hsl(29, 100%, 59%);
+}
+
+body {
+  color: var(--white-accent);
+  padding-top: 100px;
+}
+
+.wrapper {
+  margin: 0px 8%;
+}
+
+.comment-input-area {
+  margin: auto;
+  width: 50%;
+}
+
+.comment-input-area textarea {
+  resize: none;
+  width: 100%;
+  height: 120px;
+  border: 0;
+  background-color: var(--white-accent);
+  outline: none;
+  padding: 1.5%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.comment-input-area button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border: 0;
+  translate: 0px -3px;
+  background-color: var(--main-color);
+  color: var(--white-accent);
+  font-size: 1rem;
+  transition: all .1s ease-out;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.comment-input-area button:hover {
+  background-color: #ff7b39;
+  cursor: pointer;
+}
+
+.comment-input-area button:active{
+  background-color: #cf561a;
+}
+
+.comment {
+  margin-bottom: 4%;
+  background-color: var(--accent-color);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.username {
+  color: var(--main-color);
+  margin-bottom: 2px;
+  font-size: 1.1rem;
+}
+
+.sentDate {
+  margin-bottom: 7px;
+  font-size: .8rem;
+}
+
+.commentText {
+  margin-top: 1%;
+
+}
+
+.comment img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  margin-right: max(5px, .5%);
+  object-fit: cover;
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+svg {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 3%;
+}
+
+
+@media(max-width: 800px) {
+  .comment-input-area {
+    width: 100%;
+  }
+}
+
+@media(max-width: 600px) {
+  .header {
+    justify-content: center;
+  }
+}
+
+@media(max-width: 410px) {
+  
+  .header h1 {
+    font-size: 1.7rem;
+  }
+
+  svg {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+@media(max-width: 350px) {
+
+  .header h1 {
+    font-size: 1.2rem;
+  }
+  body {
+    padding-top: 100px;
+  }
+}
+

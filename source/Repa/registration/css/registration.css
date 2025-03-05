@@ -1,0 +1,247 @@
+body {
+    background-image: url(../img/wallpaper.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 0px;
+}
+
+form {
+    background-color: rgba(180, 94, 13, 0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    margin:auto;
+    width: 700px;
+    height: 750px;
+}
+
+.ikon {
+    display: flex;
+    border-radius: 100%;
+    border: none;
+    box-shadow: 0px 0px 15px rgb(146, 112, 48);
+    display: block;
+    align-items: right;
+}
+
+
+#cim {
+    display: flex;
+    padding: 5px 250px 15px 30px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 80px;
+    color: rgba(245, 188, 81);
+    font-size: 60px;
+    background-color: white;
+    display: inline-block;
+    box-shadow: 0px 0px 15px rgb(146, 112, 48);
+}
+
+#head {
+    padding: 20px 50px 20px 60px;
+}
+
+#registration {
+    background-color: white;
+    color: rgb(245, 188, 81);
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 15px rgb(146, 112, 48);
+    transition: 0.2s;
+    cursor: pointer;
+    vertical-align: bottom;
+    padding: 20px 40px 20px 40px;
+    font-size: 40px;
+    font-weight: bold;
+    margin: auto;
+}
+
+#regplace {
+    display: flex;
+}
+
+#registration:hover {
+    background-color: antiquewhite;
+    color: rgb(167, 129, 59);
+}
+
+#registration:active {
+    background-color: rgb(245, 188, 81);
+    color: white;
+}
+
+.brackets {
+    display: flex;
+    border-radius: 12px;
+    height: 40px;
+    width: 500px;
+    margin: auto;
+    font-size: 20px;
+    outline: none;
+    padding-left: 10px;
+}
+
+label {
+    display: flex;
+    color: white;
+    font-size: 20px;
+}
+
+#e-mail {
+    display: flex;
+    margin: 0px 0px 5px 100px;
+}
+
+.name-password {
+    margin: 25px 0px 5px 100px;
+}
+
+#last-bracket {
+    display: flex;
+    border-radius: 12px;
+    height: 40px;
+    width: 500px;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 15px;
+    outline: none;
+    padding-left: 10px;
+}
+
+#select {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    margin-left: 35px;
+}
+
+#button {
+    margin: 5px 5px 5px 5px;
+    color: rgb(245, 188, 81);
+    font-size: 30px;
+}
+
+#button:hover {
+    color: rgb(167, 129, 59);
+}
+
+#mid-section {
+    padding: 20px 0px 20px 0px;
+}
+
+#log {
+    display: flex;
+    padding: 5px 10px 10px 35px;
+}
+
+#log-style {
+    font-size: 25;
+    color: white;
+    margin: 0px 0px 0px 0px;
+    transition: 0.2;
+    text-decoration: underline;
+}
+
+#log-style:hover {
+    color: rgb(206, 206, 206);
+}
+
+#log-style:active {
+    color: rgb(250, 250, 250);
+}
+
+.errormessage {
+    text-align: center;
+    color: white;
+    background-color: #ff8989;
+    border: 1.5px solid #fd3f6b;
+    color: #cc0033;
+    font-weight: 500;
+    padding: 15px 10px;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+.successmessage {
+    text-align: center;
+    color: white;
+    background-color: #98ffa6;
+    border: 1.5px solid #108b00;
+    color: #108b00;
+    font-weight: 500;
+    padding: 15px 10px;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+.successmessage a {
+    display: block;
+    color: #0b5701;
+    text-decoration: underline;
+}
+
+@media(max-width:700px) {
+
+    form {
+        max-width: 450px;
+    }
+
+    .brackets,
+    #last-bracket {
+        width: 300px;
+    }
+
+    #head {
+        display: flex;
+        justify-content: center;
+        padding: 20px 60px 20px 60px;
+    }
+
+    #head img {
+        display: none;
+    }
+
+    #cim {
+        padding: 10px 40px 10px 40px;
+    }
+
+    #registration {
+        padding: 10px 20px 10px 20px;
+        font-size: 30px;
+    }
+
+    #e-mail {
+        justify-content: center;
+        margin: 15px 0px 5px 0px;
+    }
+
+    .name-password {
+        justify-content: center;
+        margin: 15px 0px 5px 0px;
+    }
+
+}
+
+@media(max-width:450px) {
+
+    form {
+        position: absolute;
+        max-width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+
+    .brackets,
+    #last-bracket {
+        width: 250px;
+    }
+
+}
