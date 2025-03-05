@@ -38,7 +38,7 @@ Repa is a web application developed by a group of two as a university project du
 
 4. Configure the database connection:
 
-   - Edit the database configuration file (`Repa/_rootphp/dbh.inc.php`) with your database credentials.
+   - Edit the database configuration file (`source/Repa/_rootphp/dbh.inc.php`) with your database credentials.
 
 5. Start your local server and access the application via `http://localhost/Repa`.
 
